@@ -1,0 +1,14 @@
+.task {
+    background-color: #ffffff;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task.is-dragging {
+    background-color: #e0e0e0;
+    opacity: 0.8;
+  }
+  
