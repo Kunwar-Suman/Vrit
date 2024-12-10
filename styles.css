@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(150deg, #e9892e, #63049d);
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px; 
+    width: 400px; 
+}
+
+.card {
+    width: 100%; 
+    height: 250px;
+    background: rgba(233, 142, 85, 0.1);
+    border-radius: 15px;
+    border-left: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    position: relative;
+    cursor: grab;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:active {
+    cursor: grabbing;
+    transform: scale(1.05);
+}
+
+.card .header {
+    height: 100px;
+    background: rgba(245, 199, 130, 0.2);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.card .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card .content .circle {
+    width: 50px;
+    height: 50px;
+    background: rgba(245, 199, 130, 0.2);
+    border-radius: 50%;
+    border-left: 4px solid rgba(255, 255, 255, 0.2);
+    border-top: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.card .content .boxes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card .content .boxes .long-box {
+    height: 20px;
+    width: 100%;
+    background: rgba(245, 199, 130, 0.2);
+    border-radius: 5px;
+}
+
+.card .content .boxes .short-box {
+    height: 15px;
+    width: 60%;
+    background: rgba(235, 203, 203, 0.3);
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
